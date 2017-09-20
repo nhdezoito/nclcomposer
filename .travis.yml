@@ -1,28 +1,29 @@
 language: cpp
-dist: xenial
+dist: trusty
 sudo: required
 
 addons:
   apt:
     sources:
-      - sourceline: 'deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-4.0 main'
+      - ubuntu-toolchain-r-test
+      - sourceline: 'deb http://apt.llvm.org/trusty/ llvm-toolchain-trusty-4.0 main'
         key_url: 'https://apt.llvm.org/llvm-snapshot.gpg.key'
     packages:
       - clang-4.0
-      - libclang-common-4.0-dev
-      - libclang-4.0-dev
-      - libclang1-4.0
-      - libclang1-4.0-dbg
-      - libllvm-4.0-ocaml-dev
-      - libllvm4.0
-      - libllvm4.0-dbg
-      - lldb-4.0 llvm-4.0
-      - llvm-4.0-dev
-      - llvm-4.0-runtime
-      - clang-format-4.0
-      - python-clang-4.0
-      - libfuzzer-4.0-dev
-      - cmake
+#      - libclang-common-4.0-dev
+#      - libclang-4.0-dev
+#      - libclang1-4.0
+#      - libclang1-4.0-dbg
+#      - libllvm-4.0-ocaml-dev
+#      - libllvm4.0
+#      - libllvm4.0-dbg
+#      - lldb-4.0 llvm-4.0
+#      - llvm-4.0-dev
+#      - llvm-4.0-runtime
+#      - clang-format-4.0
+#      - python-clang-4.0
+#      - libfuzzer-4.0-dev
+#      - cmake
       - sl
 
 before_script:
@@ -31,6 +32,6 @@ before_script:
 
 script:
   - ls -lah
-  - CC --version
-  - CXX --version
+  - echo CC
+  - echo CXX
   - sl
