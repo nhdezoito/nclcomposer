@@ -24,6 +24,6 @@ addons:
       - cmake
 
 script:
-  ls -lah
-  clang --help
-  clang++ --help
+  - ls -lah
+  - clang --version
+  - clang++ --version
