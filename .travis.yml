@@ -34,4 +34,4 @@ script:
   - ls -lah
   - echo CC
   - echo CXX
-  - sl
+  - /usr/games/sl
