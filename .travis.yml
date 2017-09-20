@@ -1,0 +1,5 @@
+dist: xenial
+sudo: required
+
+script:
+  ls -lah
