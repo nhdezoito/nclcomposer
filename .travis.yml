@@ -1,3 +1,4 @@
+language: cpp
 dist: xenial
 sudo: required
 
@@ -27,3 +28,4 @@ script:
   - ls -lah
   - clang --version
   - clang++ --version
+  - sl
