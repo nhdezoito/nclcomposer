@@ -32,6 +32,6 @@ before_script:
 
 script:
   - ls -lah
-  - echo CC
-  - echo CXX
+  - echo $CC
+  - echo $CXX
   - /usr/games/sl
